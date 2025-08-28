@@ -1,0 +1,10 @@
+# Virtual Environment
+venv/
+
+# Data files
+*.csv
+*.pkl
+*.json
+
+# PyCharm files
+.idea/
