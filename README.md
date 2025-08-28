@@ -1,6 +1,6 @@
 # Steam Game Recommender System
 
-This project is a comprehensive exploration of building and evaluating various recommender system algorithms. Using the [Game Recommendations on Steam](https://www.kaggle.com/datasets/antonkozyriev/game-recommendations-on-steam) dataset from Kaggle, the project progresses from simple baselines to a sophisticated hybrid model, culminating in an interactive web application built with Streamlit.
+This project is made with the intention of building and evaluating various recommender system algorithms. Using the [Game Recommendations on Steam](https://www.kaggle.com/datasets/antonkozyriev/game-recommendations-on-steam) dataset from Kaggle, the project progresses from simple baselines to a hybrid model, also having an interactive web application built with Streamlit.
 
 ## Features
 
@@ -8,7 +8,7 @@ This project is a comprehensive exploration of building and evaluating various r
 -   **Dual Recommendation Modes:**
     -   **User-Based Recommendations:** A hybrid model provides personalized game recommendations for a selected user, balancing personal taste with game quality.
     -   **Item-Based Recommendations:** A content-based model finds games similar to a selected game based on textual metadata (tags and descriptions).
--   **Multiple Models:** Implementation and evaluation of three distinct recommender models.
+-   **Multiple Models:** Implementation and evaluation of three recommender models.
 
 ---
 
@@ -20,7 +20,7 @@ This project follows an iterative development process, building and evaluating t
 
 2.  **Collaborative Filtering (ALS):** This model employs the **Alternating Least Squares (ALS)** algorithm from the `implicit` library. It learns latent features for users and games from implicit feedback signals (a "confidence score" derived from playtime and review helpfulness) to provide highly personalized recommendations.
 
-3.  **Simple Hybrid Model:** The final model is a two-stage "filter" hybrid. It uses the powerful **ALS model** for personalized candidate generation and then **filters the results** based on a global game quality score (`positive_ratio`) to ensure the final recommendations are both relevant and of high quality.
+3.  **Simple Hybrid Model:** The final model is a two-stage "filter" hybrid. It uses the **ALS model** for personalized candidate generation and then **filters the results** based on a global game quality score (`positive_ratio`) to ensure the final recommendations are both relevant and of high quality.
 
 ---
 
